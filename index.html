@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrandMyStore — Physical Brand Exposure Marketplace</title>
+  <meta name="description" content="Discover and book real world brand exposure inside stores, hotels, gyms, cafés, salons and other physical spaces." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="BrandMyStore home">
+      <span class="brand-mark">B</span>
+      <span>BrandMyStore</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#marketplace">Browse spaces</a>
+      <a href="#how">How it works</a>
+      <a href="#for-spaces">For spaces</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" data-open="brandModal">I’m a brand</button>
+      <button class="btn btn-dark" data-open="spaceModal">List your space</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">REAL WORLD BRAND EXPOSURE</div>
+        <h1>Put your brand where people already are.</h1>
+        <p>Discover stores, hotels, gyms, cafés, salons and venues where your brand can advertise, sample, activate and sell in the real world.</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent btn-large" href="#marketplace">Browse opportunities</a>
+          <button class="btn btn-white btn-large" data-open="spaceModal">Monetize my space</button>
+        </div>
+        <div class="trust-row">
+          <span>No long contracts</span><span>Direct opportunities</span><span>Local + national campaigns</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card visual-card-main">
+          <div class="visual-photo photo-hotel"></div>
+          <div class="visual-body">
+            <div class="visual-top"><span class="pill">Hotel</span><span class="price">from $450</span></div>
+            <h3>Lobby + guest room sampling</h3>
+            <p>Fort Lauderdale, FL · 8,500 monthly guests</p>
+          </div>
+        </div>
+        <div class="float-card float-one"><strong>6.2K</strong><span>monthly visitors</span></div>
+        <div class="float-card float-two"><strong>4 ways</strong><span>to activate</span></div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Marketplace categories">
+      <button data-category="All" class="category-chip active">All spaces</button>
+      <button data-category="Retail" class="category-chip">Retail</button>
+      <button data-category="Hotel" class="category-chip">Hotels</button>
+      <button data-category="Gym" class="category-chip">Gyms</button>
+      <button data-category="Cafe" class="category-chip">Cafés</button>
+      <button data-category="Salon" class="category-chip">Salons</button>
+      <button data-category="Venue" class="category-chip">Venues</button>
+    </section>
+
+    <section class="marketplace" id="marketplace">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow dark">MARKETPLACE</div>
+          <h2>Featured brand opportunities</h2>
+        </div>
+        <div class="search-wrap"><input id="searchInput" type="search" placeholder="Search city, space or opportunity" /></div>
+      </div>
+
+      <div class="filters-row">
+        <select id="locationFilter">
+          <option value="All">All locations</option>
+          <option>Fort Lauderdale</option>
+          <option>Miami</option>
+          <option>New York</option>
+          <option>Cannes</option>
+          <option>Toronto</option>
+          <option>Dubai</option>
+        </select>
+        <select id="activationFilter">
+          <option value="All">All activations</option>
+          <option>Sampling</option>
+          <option>Product placement</option>
+          <option>Window advertising</option>
+          <option>Pop up</option>
+          <option>Digital screens</option>
+          <option>Sponsored event</option>
+        </select>
+        <select id="budgetFilter">
+          <option value="All">Any budget</option>
+          <option value="500">Under $500</option>
+          <option value="1000">Under $1,000</option>
+          <option value="2500">Under $2,500</option>
+        </select>
+      </div>
+
+      <div class="listing-grid" id="listingGrid"></div>
+      <div id="noResults" class="no-results hidden">No spaces match those filters yet.</div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="eyebrow dark">HOW IT WORKS</div>
+      <h2>Real world media, made bookable.</h2>
+      <div class="steps-grid">
+        <article><span>01</span><h3>Discover</h3><p>Browse physical spaces by audience, location, traffic and activation type.</p></article>
+        <article><span>02</span><h3>Request</h3><p>Tell the space what you want to launch, sample, sell or promote.</p></article>
+        <article><span>03</span><h3>Activate</h3><p>Coordinate the campaign and put your brand directly in front of real customers.</p></article>
+      </div>
+    </section>
+
+    <section class="split-section" id="for-spaces">
+      <div class="split-copy">
+        <div class="eyebrow">FOR SPACE OWNERS</div>
+        <h2>Your walls, shelves, screens and foot traffic have value.</h2>
+        <p>Turn unused customer touchpoints into new revenue. List your space free and choose the opportunities you are open to.</p>
+        <ul>
+          <li>Product sampling</li>
+          <li>Shelf and counter placement</li>
+          <li>Window and in store advertising</li>
+          <li>Sponsored events and pop ups</li>
+          <li>Guest room and welcome bag placement</li>
+        </ul>
+        <button class="btn btn-accent btn-large" data-open="spaceModal">List your space free</button>
+      </div>
+      <div class="inventory-card">
+        <div class="inventory-header"><span>Sample inventory</span><strong>Adventure Inn</strong></div>
+        <div class="inventory-item"><span>Guest room sampling</span><strong>$350</strong></div>
+        <div class="inventory-item"><span>Lobby display</span><strong>$500</strong></div>
+        <div class="inventory-item"><span>Campfire sponsorship</span><strong>$750</strong></div>
+        <div class="inventory-item"><span>Welcome bag insert</span><strong>$200</strong></div>
+        <div class="inventory-total"><span>Potential monthly media value</span><strong>$1,800+</strong></div>
+      </div>
+    </section>
+
+    <section class="brand-cta">
+      <div><div class="eyebrow dark">FOR BRANDS</div><h2>Need the right physical audience?</h2><p>Tell us who you want to reach and we will help match you with relevant spaces.</p></div>
+      <button class="btn btn-dark btn-large" data-open="brandModal">Submit a brand brief</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">B</span><span>BrandMyStore</span></a>
+    <p>Physical spaces. Real audiences. Better brand exposure.</p>
+    <div><a href="#marketplace">Marketplace</a><a href="#for-spaces">List a space</a><a href="mailto:hello@brandmystore.com">Contact</a></div>
+    <small>© 2026 BrandMyStore. Marketplace demo.</small>
+  </footer>
+
+  <div class="modal" id="brandModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close>×</button>
+      <div class="eyebrow dark">BRAND BRIEF</div>
+      <h2>Find your next physical activation.</h2>
+      <p>Tell us what you are looking for. For this MVP, submissions open your email client with the details prefilled.</p>
+      <form id="brandForm">
+        <label>Brand name<input name="brand" required placeholder="e.g. Northern Spark" /></label>
+        <label>Your email<input type="email" name="email" required placeholder="you@brand.com" /></label>
+        <div class="form-grid"><label>Target city<input name="city" placeholder="Miami, Toronto, nationwide..." /></label><label>Budget<input name="budget" placeholder="$1,500" /></label></div>
+        <label>What do you want to do?<select name="activation"><option>Product sampling</option><option>Product placement</option><option>Window advertising</option><option>Pop up</option><option>Digital screens</option><option>Sponsored event</option></select></label>
+        <label>Campaign details<textarea name="details" rows="4" placeholder="Audience, timing, product, goals..."></textarea></label>
+        <button class="btn btn-dark btn-large full" type="submit">Send brand brief</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="spaceModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close>×</button>
+      <div class="eyebrow dark">LIST YOUR SPACE</div>
+      <h2>Turn your location into brand inventory.</h2>
+      <p>Share the basics and we can create your first listing.</p>
+      <form id="spaceForm">
+        <label>Business / space name<input name="space" required placeholder="e.g. Adventure Inn" /></label>
+        <label>Your email<input type="email" name="email" required placeholder="you@business.com" /></label>
+        <div class="form-grid"><label>City<input name="city" required /></label><label>Space type<select name="type"><option>Retail</option><option>Hotel</option><option>Gym</option><option>Cafe</option><option>Salon</option><option>Venue</option><option>Other</option></select></label></div>
+        <label>Approx. monthly visitors<input name="traffic" placeholder="e.g. 5,000" /></label>
+        <label>What could brands use?<textarea name="inventory" rows="4" placeholder="Shelves, lobby, screens, guest rooms, windows, events..."></textarea></label>
+        <button class="btn btn-accent btn-large full" type="submit">Submit my space</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="listingModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel modal-listing" id="listingModalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
