@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BrandMyStore — Physical Brand Exposure Marketplace</title>
+  <title>BrandMyStore | Physical Brand Exposure Marketplace</title>
   <meta name="description" content="Discover and book real world brand exposure inside stores, hotels, gyms, cafés, salons and other physical spaces." />
+  <meta name="theme-color" content="#171714" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260909">
+  <link rel="shortcut icon" href="favicon.svg?v=20260909">
+  <link rel="canonical" href="https://www.brandmystore.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.brandmystore.com/">
+  <meta property="og:title" content="BrandMyStore | Physical Brand Exposure Marketplace">
+  <meta property="og:description" content="Find physical spaces where brands can advertise, sample, activate and sell to real customers.">
+  <meta property="og:image" content="https://images.pexels.com/photos/18426842/pexels-photo-18426842.jpeg?auto=compress&cs=tinysrgb&w=1600">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -32,25 +42,27 @@
       <div class="hero-copy">
         <div class="eyebrow">REAL WORLD BRAND EXPOSURE</div>
         <h1>Put your brand where people already are.</h1>
-        <p>Discover stores, hotels, gyms, cafés, salons and venues where your brand can advertise, sample, activate and sell in the real world.</p>
+        <p>Browse real world opportunities across stores, hotels, gyms, cafés, salons and venues where brands can advertise, sample, activate and sell inside trusted physical spaces.</p>
         <div class="hero-actions">
           <a class="btn btn-accent btn-large" href="#marketplace">Browse opportunities</a>
           <button class="btn btn-white btn-large" data-open="spaceModal">Monetize my space</button>
         </div>
         <div class="trust-row">
-          <span>No long contracts</span><span>Direct opportunities</span><span>Local + national campaigns</span>
+          <span>No long contracts</span><span>Direct opportunities</span><span>Local and national campaigns</span>
         </div>
       </div>
       <div class="hero-visual">
         <div class="visual-card visual-card-main">
-          <div class="visual-photo photo-hotel"></div>
+          <div class="visual-photo">
+            <img src="https://images.pexels.com/photos/18426842/pexels-photo-18426842.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Boutique hotel lobby opportunity in Fort Lauderdale" />
+          </div>
           <div class="visual-body">
             <div class="visual-top"><span class="pill">Hotel</span><span class="price">from $450</span></div>
-            <h3>Lobby + guest room sampling</h3>
+            <h3>Lobby and guest room sampling</h3>
             <p>Fort Lauderdale, FL · 8,500 monthly guests</p>
           </div>
         </div>
-        <div class="float-card float-one"><strong>6.2K</strong><span>monthly visitors</span></div>
+        <div class="float-card float-one"><strong>6.2K</strong><span>monthly visits</span></div>
         <div class="float-card float-two"><strong>4 ways</strong><span>to activate</span></div>
       </div>
     </section>
@@ -119,7 +131,7 @@
       <div class="split-copy">
         <div class="eyebrow">FOR SPACE OWNERS</div>
         <h2>Your walls, shelves, screens and foot traffic have value.</h2>
-        <p>Turn unused customer touchpoints into new revenue. List your space free and choose the opportunities you are open to.</p>
+        <p>Turn underused customer touchpoints into new revenue. List your space free and choose the opportunities you are open to.</p>
         <ul>
           <li>Product sampling</li>
           <li>Shelf and counter placement</li>
@@ -130,7 +142,7 @@
         <button class="btn btn-accent btn-large" data-open="spaceModal">List your space free</button>
       </div>
       <div class="inventory-card">
-        <div class="inventory-header"><span>Sample inventory</span><strong>Adventure Inn</strong></div>
+        <div class="inventory-header"><span>Example inventory</span><strong>Adventure Inn</strong></div>
         <div class="inventory-item"><span>Guest room sampling</span><strong>$350</strong></div>
         <div class="inventory-item"><span>Lobby display</span><strong>$500</strong></div>
         <div class="inventory-item"><span>Campfire sponsorship</span><strong>$750</strong></div>
@@ -149,7 +161,7 @@
     <a class="brand footer-brand" href="#top"><span class="brand-mark">B</span><span>BrandMyStore</span></a>
     <p>Physical spaces. Real audiences. Better brand exposure.</p>
     <div><a href="#marketplace">Marketplace</a><a href="#for-spaces">List a space</a><a href="mailto:hello@brandmystore.com">Contact</a></div>
-    <small>© 2026 BrandMyStore. Marketplace demo.</small>
+    <small>© 2026 BrandMyStore. All rights reserved.</small>
   </footer>
 
   <div class="modal" id="brandModal" aria-hidden="true">
@@ -158,7 +170,7 @@
       <button class="modal-close" data-close>×</button>
       <div class="eyebrow dark">BRAND BRIEF</div>
       <h2>Find your next physical activation.</h2>
-      <p>Tell us what you are looking for. For this MVP, submissions open your email client with the details prefilled.</p>
+      <p>Tell us what you are looking for and we will match you with relevant physical spaces and activation opportunities.</p>
       <form id="brandForm">
         <label>Brand name<input name="brand" required placeholder="e.g. Northern Spark" /></label>
         <label>Your email<input type="email" name="email" required placeholder="you@brand.com" /></label>
@@ -178,7 +190,7 @@
       <h2>Turn your location into brand inventory.</h2>
       <p>Share the basics and we can create your first listing.</p>
       <form id="spaceForm">
-        <label>Business / space name<input name="space" required placeholder="e.g. Adventure Inn" /></label>
+        <label>Business or space name<input name="space" required placeholder="e.g. Adventure Inn" /></label>
         <label>Your email<input type="email" name="email" required placeholder="you@business.com" /></label>
         <div class="form-grid"><label>City<input name="city" required /></label><label>Space type<select name="type"><option>Retail</option><option>Hotel</option><option>Gym</option><option>Cafe</option><option>Salon</option><option>Venue</option><option>Other</option></select></label></div>
         <label>Approx. monthly visitors<input name="traffic" placeholder="e.g. 5,000" /></label>
